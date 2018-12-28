@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body{
+    margin: 0;
+}
+/* start header css */
+
+/* thiết lập màu của phần header và độ rộng */
+.header{
+    width: 100%;
+    background-color: orange;
+    padding: 10px 0; 
+}
+
+/* kích thước nội dung hiển thị là 80% */
+.header-content{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* canh lề phải cho các thẻ */
+.header-content i,.header-content span{
+    margin-right: 10px;
+}
+.header-content span{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* end header css */
+
+/* start navbar css*/
+.myNavbar-brand h2{
+    margin: auto;
+}
+.myNavbar-brand span{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.myNavbar-brand i{
+    font-weight: bold;
+}
+
+/* hiển thị phần Navbar 80% */
+.myNavbar-content{
+    width: 80%;
+    margin:auto;
+}
+.myNavbar-brand,.myNavbar-menu,.social{
+    float: left; /* float --> nằm cùng 1 hàng và left là nằm về bên trái */
+}
+.myNavbar-brand{
+    padding-top: 1.5rem;
+    width: 12%; /* Logo chiếm 12% thanh Navbar */
+}
+.myNavbar-menu{
+    padding-top:0.7rem;
+    width: 73%; /* phần menu chiếm 77% thanh Navbar */
+}
+.myNavbar-menu ul{
+    list-style: none; /* mất dấu tròn phía trước của thẻ <ul> */
+}
+.myNavbar-menu ul li{
+    float: left; /* nằm cùng 1 hàng */
+    margin-right:1rem; /* 1rem = 16px */
+    font-family: 'Quicksand', sans-serif; 
+}
+.myNavbar-menu a{
+    color:black;
+    text-decoration: none; /* mất dấu gạch dưới của thẻ a */
+    font-weight: bold; /* in đậm */
+}
+.active a{
+    color:orange;
+}
+.social{
+    padding-top: 1.2rem;
+    width: 15%;
+}
+.social-item {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: white;
+    border-radius: 50%; /* Bo tròn icon */
+    float: left; /* nằm cùng 1 hàng */
+    margin-right:0.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+.social-item i {
+    color:white;
+    text-decoration: none;
+}
+
+/* canh icon social */
+.social-item i{
+    padding-left:0.45rem;
+    padding-top:0.45rem;
+}
+.fb-social  {
+    background-color:#3b5998;
+}
+.youtube-social {
+    background-color: #ff0000;
+}
+.github-social {
+    background-color: black;
+}
+
+/* Phần Reponsive cho web */
+@media screen and (max-width: 1150px){ /* khi màn hình nhỏ hơn 1150px --> căn chỉnh lại */
+    .myNavbar-brand{
+        width:100%;
+        height:auto;
+        position: relative;
+    }
+    .myNavbar-menu{
+        width: 100%;
+        height: auto;
+        margin-left:-40px;
+        margin-top:-20px;
+    }
+    .social{
+        width: 100%;
+        margin-top:-10px;
+    }
+
+    iframe{
+        height:100%;
+    }
+}
+
+.myNavbar-menu li a:hover{
+    color: #8D9440;
+}
+.myNavbar-brand i{
+    color: #00A591;
+}
+.myNavbar-brand a {
+   color: #00A591; 
+   text-decoration: none;
+}
+
+/* Start about */
+.khung-about{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.khung-chua-anh{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10em;
+    width:100%;
+}
+
+.khung-chua-anh img{
+    border-radius: 50%;
+    width: 15%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+
+.khung-van-ban {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* end about */
+
+/* start my school */
+
+.khung-my-school{
+    width: 80%;
+    margin: 0 auto;
+}
+.khung-logo img{
+    border-radius: 50%;
+    width: 15%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+}
+.PTIT {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* end my school */
+
+/* start video */
+.khung-video{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.khung-video h2{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+iframe{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* end video */
+
+/* start contact */
+.khung-contact{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.khung-contact i{
+    margin-right: 10px;
+}
+
+/* end contact */
+/* start footer */
+.footer{
+    width: 100%;
+    background-color: orange;
+    padding: 1px 0; 
+}
+
+.footer-content{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.footer-content i{
+    margin-right: 5px;
+}
+
+/* end footer */
+
